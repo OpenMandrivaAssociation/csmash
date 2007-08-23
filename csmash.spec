@@ -1,6 +1,6 @@
 %define	name	csmash
 %define	version	0.6.6
-%define rel	9
+%define rel	10
 %define release %mkrel %rel
 
 Name:		%{name}
@@ -45,7 +45,7 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=CannonSmash
-Comment=%{summary}
+Comment=A 3D table tennis game
 Exec=%{_bindir}/%{name}
 Icon=%{name}
 Terminal=false
