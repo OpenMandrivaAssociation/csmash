@@ -1,6 +1,6 @@
 %define	name	csmash
 %define	version	0.6.6
-%define rel	10
+%define rel	11
 %define release %mkrel %rel
 
 Name:		%{name}
@@ -65,11 +65,11 @@ install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_iconsdir}/hicolor/48x48/apps/%{na
 
 %post
 %{update_menus}
-%{update_icon_cache} hicolor
+%{update_icon_cache hicolor}
 
 %postun
 %{clean_menus}
-%{clean_icon_cache} hicolor
+%{clean_icon_cache hicolor}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
