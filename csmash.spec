@@ -51,7 +51,6 @@ Icon=%{name}
 Terminal=false
 Type=Application
 Categories=Game;SportsGame;
-Encoding=UTF-8
 EOF
 
 install -m644 %{SOURCE11} -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
