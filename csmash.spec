@@ -20,6 +20,7 @@ Group:		Games/Sports
 BuildRequires:	libx11-devel libxext-devel libxi-devel libxmu-devel libxt-devel
 BuildRequires:	SDL_mixer-devel SDL_image-devel  alsa-lib-devel esound-devel
 BuildRequires:	gtk+2-devel mesaglu-devel jpeg-devel texinfo zlib-devel gettext bison
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-%{release}-buildroot
 
 %description
 CannonSmash is a 3D tabletennis game. The goal of this project is to represent
