@@ -1,6 +1,6 @@
 %define	name	csmash
 %define	version	0.6.6
-%define rel	11
+%define rel	12
 %define release %mkrel %rel
 
 Name:		%{name}
