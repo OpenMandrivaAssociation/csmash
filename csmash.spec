@@ -1,7 +1,6 @@
 %define	name	csmash
 %define	version	0.6.6
-%define rel	15
-%define release %mkrel %rel
+%define release %mkrel 16
 
 Name:		%{name}
 Summary:	A 3D table tennis game
