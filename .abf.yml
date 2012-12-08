@@ -1,5 +1,5 @@
 sources:
-  "csmash-0.6.6.tar.bz2:"	bbdc15c3953240be1e055031e1e9c89ae9eb17e5
-  "csmash.16.png:"	daad0b117436ea476397ba4c60c79eb23c5980d0
-  "csmash.32.png:"	9ddc1590b3bd8cbbe43aec759019559d99ef396d
-  "csmash.48.png:"	7e6a0bfb7c6addb43cba417f9e8697bf9a42c540
+  "csmash-0.6.6-64bit-fixes.patch.bz2": 4000ec87aa365ffab7046d0ce715aa929e6f56dc
+  "csmash-0.6.6-extraqualif.patch.bz2": 58e6753322753ba8fae46e45fb2c50fe6b837d45
+  "csmash-0.6.6-gcc4.patch.bz2": 31d1e0e0ac496497a56826e58c032819a3134714
+  "csmash-0.6.6.tar.bz2": bbdc15c3953240be1e055031e1e9c89ae9eb17e5
