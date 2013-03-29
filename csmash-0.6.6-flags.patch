@@ -1,0 +1,14 @@
+diff -urN csmash-0.6.6/configure.in csmash-0.6.6-patched/configure.in
+--- csmash-0.6.6/configure.in	2003-08-16 16:53:55.000000000 +1100
++++ csmash-0.6.6-patched/configure.in	2013-03-30 01:04:03.569958590 +1100
+@@ -19,10 +19,6 @@
+ 
+ AC_PATH_X
+ 
+-CFLAGS="-I $x_includes"
+-LDFLAGS="-L/usr/local/lib -L$x_libraries -L$libdir"
+-CXXFLAGS="$CFLAGS -Wall"
+-
+ dnl Checks for libraries.
+ AC_CHECK_LIB(Xmu, main)
+ AC_CHECK_LIB(Xt, main)

@@ -1,0 +1,53 @@
+--- csmash-0.6.6.orig/matrix	2002-03-06 17:46:01.000000000 +0100
++++ csmash-0.6.6/matrix	2005-01-06 19:43:32.037852232 +0100
+@@ -42,15 +42,6 @@
+ 
+ /* __BEGIN__BEGIN__ */
+ //__NAMESPACE_BEGIN(ese);
+-#if (!defined __GNUG__) || (__GNUC__ == 3)
+-template<typename T>
+-void swap(T& a, T& b)
+-{
+-    T c = a;
+-    a = b;
+-    b = c;
+-}
+-#endif
+ 
+ // matrix_size MUST BE larger than 1
+ template<int matrix_size, typename _float_t = float>
+@@ -174,9 +165,10 @@
+ 		    mx = x;
+ 		}
+ 	    }
+-	    swap(pivot[k], pivot[piv]);
+ 
+ 	    int kk = pivot[k];
++            pivot[k] = pivot[piv];
++            pivot[piv] = kk;
+ 	    float_t t = m[kk][kk];
+ 	    if (0 == t) {
+ 		return 0;
+@@ -222,9 +214,10 @@
+ 		    mx = x;
+ 		}
+ 	    }
+-	    swap(pivot[k], pivot[piv]);
+ 
+ 	    int kk = pivot[kk];
++	    pivot[k] = pivot[piv];
++	    pivot[piv] = kk;
+ 	    double t = a[kk][kk];
+ 	    if (0 == t) {
+ 		return 0;
+@@ -283,7 +276,8 @@
+ 	    }
+ 	    ik = ip[j];
+ 	    if (j != k) {
+-		swap(ip[j], ip[k]);
++		ip[j] = ip[k];
++		ip[k] = ik;
+ 		det = -det;
+ 	    }
+ 	    u = a[ik][k];
+

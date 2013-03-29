@@ -1,0 +1,21 @@
+diff -urN csmash-0.6.6/loadparts.cpp csmash-0.6.6-patched/loadparts.cpp
+--- csmash-0.6.6/loadparts.cpp	2003-11-20 02:49:31.000000000 +1000
++++ csmash-0.6.6-patched/loadparts.cpp	2013-03-30 01:07:59.107411363 +1100
+@@ -218,7 +218,7 @@
+     }
+     catch (const error &e) {
+ 	printf("loadfile failed\n");
+-	printf(e.what());
++	printf("%s", e.what());
+ 	return false;
+     }
+     return true;
+@@ -534,7 +534,7 @@
+ 	char buf[256];
+ 	snprintf(buf, sizeof(buf), "texture %s cannot be realized\n",
+                  filename.c_str());
+-	printf(buf);
++	printf("%s", buf);
+ 	throw error(buf);
+         return false;
+     } else {

@@ -1,0 +1,13 @@
+diff -Naupr csmash-0.6.6.orig/BallView.h csmash-0.6.6/BallView.h
+--- csmash-0.6.6.orig/BallView.h	2003-07-13 17:26:24.000000000 +0200
++++ csmash-0.6.6/BallView.h	2006-01-23 18:43:13.000000000 +0100
+@@ -32,7 +32,7 @@ public:
+ 
+   static GLuint m_number[10];
+ private:
+-  void BallView::DrawTargetCircle();
++  void DrawTargetCircle();
+   GLUquadricObj *m_quad;
+ 
+   void DrawBall();
+ 
