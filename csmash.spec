@@ -1,7 +1,7 @@
 Name:		csmash
 Summary:	A 3D table tennis game
 Version:	0.6.6
-Release:	19
+Release:	20
 License:	GPLv2
 Group:		Games/Sports
 URL:		http://CannonSmash.sourceforge.net/
