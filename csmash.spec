@@ -4,7 +4,7 @@ Version:	0.6.6
 Release:	20
 License:	GPLv2
 Group:		Games/Sports
-URL:		http://CannonSmash.sourceforge.net/
+URL:		https://CannonSmash.sourceforge.net/
 Source0:	http://belnet.dl.sourceforge.net/sourceforge/cannonsmash/%{name}-%{version}.tar.bz2
 Source11:	%{name}.16.png
 Source12:	%{name}.32.png
