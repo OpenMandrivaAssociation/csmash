@@ -15,6 +15,11 @@ Patch2:		csmash-0.6.6-extraqualif.patch
 Patch3:		csmash-0.6.6-flags.patch
 Patch4:		csmash-0.6.6-sfmt.patch
 Patch5:		csmash-0.6.6-automake1.13.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	bison
 BuildRequires:	gettext
 BuildRequires:	texinfo
